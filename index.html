@@ -25,19 +25,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                <a class="nav-link active" aria-current="page" href="#banner">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#date">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link" href="#form">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link comprar-tickets" href="#">Comprar tickets</a>
+                <a class="nav-link comprar-tickets" href="#buyTickets">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
         </article>
       </section>
       <!-- Section: Oradores -->
-      <section class="container mb-4">
+      <section id="speakers" class="container mb-4">
         <h2 class="text-center mb-4 speakers__title"><span class="speakers__span">Conoce a los </span>Oradores</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
           <article class="col-md-3 p-1 m-2">
@@ -99,7 +99,7 @@
         </div>
       </section>
       <!-- Section: Lugar y Fecha -->
-      <section class="container-fluid place p-0 mb-4">
+      <section id="date" class="container-fluid place p-0 mb-4">
         <img class="img-fluid place__img" src="./img/honolulu.jpg" alt="Imagen de la playa de Honolulu">
         <article class="place__content p-3">
           <h3>Bs As - Octubre</h3>
@@ -109,7 +109,7 @@
 
       </section>
       <!-- Section: Conviertete en un orador, Formulario -->
-      <section class="container mb-4 becomeSpeaker">
+      <section id="form" class="container mb-4 becomeSpeaker">
         <h2 class="speakers__title"><span class="speakers__span">Conviertete en un </span>Orador</h2>
         <p class="text-center">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
         <form class="becomeSpeaker__form" action="">
@@ -124,17 +124,17 @@
             <!-- Textarea -->
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
             </div>
             <!-- Botón de enviar del form -->
             <div class="col-12">
-              <button type="submit" class="btn becomeSpeaker__form__button">Enviar</button>
+              <button type="submit" class="becomeSpeaker__form__button">Enviar</button>
             </div>
           </div>
         </form>
       </section>
       <!-- Section: comprar tickects -->
-      <section>
+      <section id="buyTickets">
   
       </section>
     </main>
