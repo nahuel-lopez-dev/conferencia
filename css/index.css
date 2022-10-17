@@ -1,0 +1,375 @@
+/* Selector universal */
+/* Estilos generales para todo el documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables en CSS */
+:root{
+  /* Colores Clásicos de Bootstrap */
+  --color-primary: #0d6efd;
+  --color-secondary: #6c757d;
+  --color-success: #198754;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #0dcaf0;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-white: #fff;
+  --color-body: #fff;
+  --color-black: #000;
+  --color-gray: #6c757d;
+  --color-gray-dark: #343a40;
+  --color-muted: #6c757d;
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-15: rgba(255, 255, 255, 0.15);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-05: rgba(255, 255, 255, 0.05);
+  --color-black-50: rgba(0, 0, 0, 0.5);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+  --color-black-15: rgba(0, 0, 0, 0.15);
+  --color-black-10: rgba(0, 0, 0, 0.1);
+  --color-black-05: rgba(0, 0, 0, 0.05);
+  --color-primary-50: rgba(13, 110, 253, 0.5);
+  --color-primary-25: rgba(13, 110, 253, 0.25);
+  --color-primary-15: rgba(13, 110, 253, 0.15);
+  --color-primary-10: rgba(13, 110, 253, 0.1);
+  --color-primary-05: rgba(13, 110, 253, 0.05);
+  /* Paleta de colores para el proyecto */
+  --color-navbar: #343a41;
+  --color-comprar-tickets: rgb(43, 176, 61);
+  --color-form-button: rgb(150, 201, 62);
+  --color-footer: #1c3946;
+}
+
+/*Transición para agrandar los items*/
+.transformation {
+  transition: all 1s;
+}
+.transformation:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/*animación para hacer caer un elemento y que genere el efecto de desaparecer*/  
+.logo:hover .gear{
+  animation: cae 500ms linear;
+}
+@keyframes cae{
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(200%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.logo:hover{
+  color: #f8f9fa;
+  overflow: hidden;
+}
+
+.logo:hover a{
+  animation: fromRight 300ms linear;
+  color: #f8f9fa;
+}  
+@keyframes fromRight{
+  from{
+    transform: translateX(200%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+/* animación para que algo venga con desplazamiento */
+.desplazamiento{
+  animation-name: desplazamiento;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}  
+@keyframes desplazamiento{
+  0%{
+    margin-left: 30vw;
+    transform: rotate(360deg);
+  }
+  25%{
+    margin-left: 24vw;
+    transform: rotate(270deg);
+  }
+  50%{
+    margin-left: 18vw;
+    transform: rotate(180deg);
+  }
+  75%{
+    margin-left: 12vw;
+    transform: rotate(90deg);
+  }
+  100%{
+    margin-left: 0vw;
+    transform: rotate(0deg);
+  }
+}
+
+/***** Header *****/
+
+/* Navbar */
+.navbar{
+  background-color: var(--color-navbar);
+}
+
+nav div{
+  margin: 0 2rem;
+}
+
+#logo{
+  max-width: 8.5rem;
+}
+
+.nav-link:hover{
+  transform: scale(1.05);
+  transition: all 300ms;
+  text-decoration: underline;
+}
+
+.comprar-tickets {
+  color: var(--color-comprar-tickets);
+  font-weight: 600;
+}
+
+/* Portada */
+#banner {
+  background-image: url(../img/ba1.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.521);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: calc(100vh - 25px);
+  color: aliceblue;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  width: 31%;
+  margin-right: 9.5rem;
+}
+
+.banner__content--buttonSpeaker{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.banner__content--buttonSpeaker:hover{
+  transition: all 500ms;
+  background-color: white;
+  color: black;
+}
+
+.banner__content--buttonBuy{
+  background-color: var(--color-comprar-tickets);
+  border: 1px solid var(--color-navbar);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.banner__content--buttonBuy:hover{
+  transition: all 500ms;
+  background-color: var(--color-navbar);
+  color: var(--color-form-button);
+}
+
+/***** Main *****/
+
+/* Sección Los oradores */
+.speakers__title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.speakers__span{
+  display: block;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+/* Sección El lugar y la fecha */
+.place{
+  display: flex;
+}
+
+.place__img{
+  width: 50%;
+  border-right: 1px solid white;
+}
+
+.place__content{
+  background-color: var(--color-navbar);
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* text-align: center; */
+}
+
+
+/* Sección Conviertete en orador, formulario */
+.becomeSpeaker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.becomeSpeaker__form{
+  max-width: 60vw;
+}
+
+.becomeSpeaker__form__button{
+  background-color: var(--color-form-button);
+  /* border: 1px solid var(--color-comprar-tickets); */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.becomeSpeaker__form__button:hover{
+  transition: all 500ms;
+  background-color: var(--color-comprar-tickets);
+  /* color: white; */
+}
+
+/* Sección Comprar tickets */
+
+
+/***** Footer *****/
+.footer {
+  margin-top: 1rem;
+  background-color: rgb(29, 64, 84);
+  /* height: 20vh; */
+}
+.footer__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__list__item {
+  display: flex;
+  list-style: none;
+  max-width: 10vw;
+  margin: 0rem 2rem;
+}
+
+.footer__list__item__link {
+  color: aliceblue;
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+}
+
+/*** Media queries ***/
+/* media query para laptop pequeña: 1200px */
+@media(max-width: 1200px){
+  .banner__content {
+    width: 50%;
+    margin-right: 5rem;
+  }
+}
+
+/* media query para tablets: 991,98px */
+@media(max-width: 992px){
+  .portada__contenedor {
+    width: 50%;
+  }
+}
+
+/* media query para dispositivos entre tablet y mobile: 768px */
+@media(max-width: 768px){
+  #banner {
+    justify-content: start;
+    align-items: flex-end;
+    padding: 0 0 1.5rem 1.5rem;
+  }
+
+  .banner__content {
+    align-items: flex-start;
+    width: 70%;
+    margin-right: 2rem;
+    text-align: start;
+  }
+
+  .place{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .place__img{
+    width: 100%;
+    border-right: none;
+  }
+
+  .place__content{
+    background-color: var(--color-navbar);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__list__item{
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 0.5rem 0;
+  }
+}
+
+/* media query para mobile: 575,98px */
+@media(max-width: 576px){
+  nav div{
+    margin: 0 0.5rem;
+  }
+
+  #logo{
+    max-width: 6.5rem;
+  }
+
+  .banner__content{
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+

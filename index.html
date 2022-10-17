@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>La conferencia</title>
+    <meta name="description" content="Página web para una conferencia de oradores"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="./img/codoacodo.png" alt="Imagen del logo de codo a codo">
+            <span>Conf Bs As</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link comprar-tickets" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    
+    <!-- Main: Contenido Principal -->
+    <main class="">
+      <!-- Portada -->
+      <section id="banner">
+        <article class="banner__content">
+          <h3>Conf Bs As</h3>
+          <p>Bs As llega por primera vez en Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <div>
+            <button type="button" class="banner__content--buttonSpeaker m-1">Quiero ser orador</button>
+            <button type="button" class="banner__content--buttonBuy m-1">Comprar tickets</button>
+          </div>
+        </article>
+      </section>
+      <!-- Section: Oradores -->
+      <section class="container mb-4">
+        <h2 class="text-center mb-4 speakers__title"><span class="speakers__span">Conoce a los </span>Oradores</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          <article class="col-md-3 p-1 m-2">
+            <div class="card">
+              <img src="./img/steve.jpg" class="card-img-top" alt="Imagen de Steve Jobs presentando su producto">
+              <div class="card-body">
+                <span class="badge text-bg-warning">JavaScript</span>
+                <span class="badge text-bg-info text-white">React</span>
+                <h5 class="card-title mt-1">Steve Jobs</h5>
+                <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quasi at quod laudantium voluptatum laboriosam ex exercitationem culpa reprehenderit debitis ut iusto libero, tenetur molestias minus et. Perspiciatis, rem eius.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 p-1 m-2">
+            <div class="card">
+              <img src="./img/bill.jpg" class="card-img-top" alt="Imagen de Bill Gates hablando">
+              <div class="card-body">
+                <span class="badge text-bg-warning">JavaScript</span>
+                <span class="badge text-bg-info text-white">React</span>
+                <h5 class="card-title mt-1">Bill Gates</h5>
+                <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quasi at quod laudantium voluptatum laboriosam ex exercitationem culpa reprehenderit debitis ut iusto libero, tenetur molestias minus et. Perspiciatis, rem eius.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 p-1 m-2">
+            <div class="card">
+              <img src="./img/ada.jpg" class="card-img-top" alt="Retrato de Ada Lovelace">
+              <div class="card-body">
+                <span class="badge text-bg-secondary">Negocios</span>
+                <span class="badge text-bg-danger text-white">Startups</span>
+                <h5 class="card-title mt-1">Ada Lovelace</h5>
+                <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quasi at quod laudantium voluptatum laboriosam ex exercitationem culpa reprehenderit debitis ut iusto libero, tenetur molestias minus et. Perspiciatis, rem eius.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Section: Lugar y Fecha -->
+      <section class="container-fluid place p-0 mb-4">
+        <img class="img-fluid place__img" src="./img/honolulu.jpg" alt="Imagen de la playa de Honolulu">
+        <article class="place__content p-3">
+          <h3>Bs As - Octubre</h3>
+          <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado-consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+          <button type="button" class="banner__content--buttonSpeaker m-1">Conocé más</button>
+        </article>
+
+      </section>
+      <!-- Section: Conviertete en un orador, Formulario -->
+      <section class="container mb-4 becomeSpeaker">
+        <h2 class="speakers__title"><span class="speakers__span">Conviertete en un </span>Orador</h2>
+        <p class="text-center">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        <form class="becomeSpeaker__form" action="">
+          <div class="row">
+            <!-- Inputs de nombre y apellido -->
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+            <!-- Textarea -->
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            </div>
+            <!-- Botón de enviar del form -->
+            <div class="col-12">
+              <button type="submit" class="btn becomeSpeaker__form__button">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- Section: comprar tickects -->
+      <section>
+  
+      </section>
+    </main>
+    <!-- Fin main -->
+
+    <!-- Footer -->
+    <footer class="footer p-1 bg-gradient">
+      <ul class="footer__list p-3">
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Preguntas frecuentes</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Contáctanos</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Prensa</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Conferencias</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Términos y Condiciones</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Privacidad</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__list__item__link">Estudiantes</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Fin footer -->
+
+    <!-- Enlace a JS de Boostrap local -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <!-- Enlace a JS local -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
