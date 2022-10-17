@@ -148,7 +148,7 @@ nav div{
 #banner {
   background-image: url(../img/ba1.jpg);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0.504);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -340,6 +340,10 @@ nav div{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .becomeSpeaker__form{
+    max-width: 90vw;
   }
 
   .footer__list__item{
