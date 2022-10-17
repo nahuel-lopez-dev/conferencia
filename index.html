@@ -134,8 +134,71 @@
         </form>
       </section>
       <!-- Section: comprar tickects -->
-      <section id="buyTickets">
-  
+      <section id="buyTickets" class="container mt-3">
+        <div class="buyTickets__content">
+          <div class="text-center border border-primary p-3 m-2">
+            <h3>Estudiante</h3>
+            <p class="fs-5">Tienen un descuento</p>
+            <p class="fw-bold">80%</p>
+            <p class="lead">* presentar documentación</p>
+          </div>
+          <div class="text-center border border-info p-3 m-2">
+            <h3>Trainee</h3>
+            <p class="fs-5">Tienen un descuento</p>
+            <p class="fw-bold">50%</p>
+            <p class="lead">* presentar documentación</p>
+          </div>
+          <div class="text-center border border-warning p-3 m-2">
+            <h3>Junior</h3>
+            <p class="fs-5">Tienen un descuento</p>
+            <p class="fw-bold">15%</p>
+            <p class="lead">* presentar documentación</p>
+          </div>
+        </div>
+        <h2 class="text-center mb-4 speakers__title"><span class="speakers__span">venta </span>valor de ticket $200</h2>
+        <div class="becomeSpeaker">
+          <form class="buyTicketsForm" action="">
+            <div class="row">
+              <!-- Inputs de nombre y apellido -->
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+              </div>
+              <!-- Input de correo -->
+              <div>
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+              </div>
+              <!-- Inputs de cantidad y categoría -->
+              <div class="col mt-3">
+                <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad" min="1" max="99" required>
+              </div>
+              <div class="col mt-3">
+                <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+                <select class="form-select" aria-label="Default select example" aria-placeholder="Estudiante">
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="alert alert-primary" role="alert">Total a Pagar: $</div>
+              </div>
+              <!-- Botones de borrar y resumen -->
+              <div class="d-flex mt-2">
+                <div class="col m-2">
+                  <button type="submit" class="becomeSpeaker__form__button">Borrar</button>
+                </div>
+                <div class="col m-2">
+                  <button type="reset" class="becomeSpeaker__form__button">Resumen</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <!-- Fin main -->

@@ -264,7 +264,16 @@ nav div{
 }
 
 /* Sección Comprar tickets */
+.buyTickets__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.buyTicketsForm{
+  max-width: 48vw;
+}
 
 /***** Footer *****/
 .footer {
@@ -302,6 +311,10 @@ nav div{
   .banner__content {
     width: 50%;
     margin-right: 5rem;
+  }
+
+  .buyTicketsForm{
+    max-width: 70vw;
   }
 }
 
@@ -351,6 +364,10 @@ nav div{
     max-width: 90vw;
   }
 
+  .buyTicketsForm{
+    max-width: 90vw;
+  }
+
   .footer__list__item{
     flex-direction: column;
     max-width: 100vw;
@@ -371,6 +388,11 @@ nav div{
   .banner__content{
     width: 90%;
     margin-right: 0;
+  }
+
+  .buyTickets__content{
+    flex-direction: column;
+    margin-bottom: 1rem;
   }
 }
 
