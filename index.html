@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>La conferencia</title>
+    <title>Conferencia Bs As</title>
     <meta name="description" content="Página web para una conferencia de oradores"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css"/>
@@ -15,7 +15,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#buyTickets">
             <img id="logo" src="./img/codoacodo.png" alt="Imagen del logo de codo a codo">
             <span>Conf Bs As</span>
           </a>
@@ -53,9 +53,9 @@
         <article class="banner__content">
           <h3>Conf Bs As</h3>
           <p>Bs As llega por primera vez en Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-          <div>
-            <button type="button" class="banner__content--buttonSpeaker m-1">Quiero ser orador</button>
-            <button type="button" class="banner__content--buttonBuy m-1">Comprar tickets</button>
+          <div class="banner__content_buttons">
+            <a href="#form" class="banner__content--buttonSpeaker m-1">Quiero ser orador<a/>
+            <a href="#buyTickets" class="banner__content--buttonBuy m-1">Comprar tickets</a>
           </div>
         </article>
       </section>
@@ -116,15 +116,15 @@
           <div class="row">
             <!-- Inputs de nombre y apellido -->
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
             </div>
             <!-- Textarea -->
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?" required></textarea>
             </div>
             <!-- Botón de enviar del form -->
             <div class="col-12">
@@ -134,7 +134,7 @@
         </form>
       </section>
       <!-- Section: comprar tickects -->
-      <section id="buyTickets" class="container mt-3">
+      <section id="buyTickets" class="container mt-4">
         <div class="buyTickets__content">
           <div class="text-center border border-primary p-3 m-2">
             <h3>Estudiante</h3>
@@ -155,13 +155,13 @@
             <p class="lead">* presentar documentación</p>
           </div>
         </div>
-        <h2 class="text-center mb-4 speakers__title"><span class="speakers__span">venta </span>valor de ticket $200</h2>
+        <h2 class="text-center mt-2 mb-4 speakers__title"><span class="speakers__span">venta </span>valor de ticket $200</h2>
         <div class="becomeSpeaker">
           <form class="buyTicketsForm" action="">
             <div class="row">
               <!-- Inputs de nombre y apellido -->
               <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
               </div>
               <div class="col">
                 <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
@@ -169,7 +169,7 @@
               <!-- Input de correo -->
               <div>
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo" required>
               </div>
               <!-- Inputs de cantidad y categoría -->
               <div class="col mt-3">
@@ -190,10 +190,10 @@
               <!-- Botones de borrar y resumen -->
               <div class="d-flex mt-2">
                 <div class="col m-2">
-                  <button type="submit" class="becomeSpeaker__form__button">Borrar</button>
+                  <button type="reset" class="becomeSpeaker__form__button">Borrar</button>
                 </div>
                 <div class="col m-2">
-                  <button type="reset" class="becomeSpeaker__form__button">Resumen</button>
+                  <button type="submit" class="becomeSpeaker__form__button">Resumen</button>
                 </div>
               </div>
             </div>

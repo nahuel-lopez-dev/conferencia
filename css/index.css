@@ -176,6 +176,7 @@ nav div{
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 .banner__content--buttonSpeaker:hover{
@@ -190,6 +191,7 @@ nav div{
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 .banner__content--buttonBuy:hover{
@@ -385,6 +387,10 @@ nav div{
     max-width: 6.5rem;
   }
 
+  #banner {
+    height: calc(100vh - 69px);
+  }
+
   .banner__content{
     width: 90%;
     margin-right: 0;
@@ -393,6 +399,11 @@ nav div{
   .buyTickets__content{
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .banner__content_buttons{
+    display: flex;
+    flex-direction: column;
   }
 }
 
