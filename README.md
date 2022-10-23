@@ -11,7 +11,7 @@ Este es el proyecto Front-end para el curso Full Stack con Node.js, de Codo a Co
 
 ## *Version 1.0.0:*
 
-- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=github&logoColor=fff&color=23272d)](https://...)
+- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=github&logoColor=fff&color=23272d)](https://nahuel-devone.github.io/conferencia/)
 
 - No tiene incorporada ninguna base de datos
 
