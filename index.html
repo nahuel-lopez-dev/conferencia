@@ -16,7 +16,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="#buyTickets">
-            <img id="logo" src="./img/codoacodo.png" alt="Imagen del logo de codo a codo">
+            <img id="logo" class="desplazamiento" src="./img/codoacodo.png" alt="Imagen del logo de codo a codo">
             <span>Conf Bs As</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -157,7 +157,7 @@
         </div>
         <h2 class="text-center mt-2 mb-4 speakers__title"><span class="speakers__span">venta </span>valor de ticket $200</h2>
         <div class="becomeSpeaker">
-          <form class="buyTicketsForm" action="">
+          <form id="formulario" class="buyTicketsForm" action="">
             <div class="row">
               <!-- Inputs de nombre y apellido -->
               <div class="col">
@@ -174,18 +174,19 @@
               <!-- Inputs de cantidad y categoría -->
               <div class="col mt-3">
                 <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad" min="1" max="99" required>
+                <input id="cantidad" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad" min="1" max="99" required>
               </div>
               <div class="col mt-3">
                 <label for="exampleFormControlInput1" class="form-label">Categoria</label>
-                <select class="form-select" aria-label="Default select example" aria-placeholder="Estudiante">
-                  <option value="1">Estudiante</option>
-                  <option value="2">Trainee</option>
-                  <option value="3">Junior</option>
+                <select id="categoria" class="form-select" aria-label="Default select example" required>
+                  <!-- <option disabled selected value="">-- Seleccione --</option> -->
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Trainee">Trainee</option>
+                  <option value="Junior">Junior</option>
                 </select>
               </div>
               <div class="col-12 mt-4">
-                <div class="alert alert-primary" role="alert">Total a Pagar: $</div>
+                <div id="pago" class="alert alert-primary" role="alert">Total a Pagar: $</div>
               </div>
               <!-- Botones de borrar y resumen -->
               <div class="d-flex mt-2">

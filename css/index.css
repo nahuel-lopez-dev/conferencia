@@ -22,22 +22,6 @@
   --color-black: #000;
   --color-gray: #6c757d;
   --color-gray-dark: #343a40;
-  --color-muted: #6c757d;
-  --color-white-50: rgba(255, 255, 255, 0.5);
-  --color-white-25: rgba(255, 255, 255, 0.25);
-  --color-white-15: rgba(255, 255, 255, 0.15);
-  --color-white-10: rgba(255, 255, 255, 0.1);
-  --color-white-05: rgba(255, 255, 255, 0.05);
-  --color-black-50: rgba(0, 0, 0, 0.5);
-  --color-black-25: rgba(0, 0, 0, 0.25);
-  --color-black-15: rgba(0, 0, 0, 0.15);
-  --color-black-10: rgba(0, 0, 0, 0.1);
-  --color-black-05: rgba(0, 0, 0, 0.05);
-  --color-primary-50: rgba(13, 110, 253, 0.5);
-  --color-primary-25: rgba(13, 110, 253, 0.25);
-  --color-primary-15: rgba(13, 110, 253, 0.15);
-  --color-primary-10: rgba(13, 110, 253, 0.1);
-  --color-primary-05: rgba(13, 110, 253, 0.05);
   /* Paleta de colores para el proyecto */
   --color-navbar: #343a41;
   --color-comprar-tickets: rgb(43, 176, 61);
@@ -54,44 +38,10 @@
   text-decoration: underline;
 }
 
-/*animación para hacer caer un elemento y que genere el efecto de desaparecer*/  
-.logo:hover .gear{
-  animation: cae 500ms linear;
-}
-@keyframes cae{
-  0%{
-    transform: translateY(0%);
-  }
-  50%{
-    transform: translateY(200%);
-  }
-  100%{
-    transform: translateY(0%);
-  }
-}
-
-.logo:hover{
-  color: #f8f9fa;
-  overflow: hidden;
-}
-
-.logo:hover a{
-  animation: fromRight 300ms linear;
-  color: #f8f9fa;
-}  
-@keyframes fromRight{
-  from{
-    transform: translateX(200%);
-  }
-  to{
-    transform: translateX(0%);
-  }
-}
-
-/* animación para que algo venga con desplazamiento */
+/* animación para que el logo venga con desplazamiento */
 .desplazamiento{
   animation-name: desplazamiento;
-  animation-duration: 800ms;
+  animation-duration: 1200ms;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }  
@@ -118,7 +68,7 @@
   }
 }
 
-/***** Header *****/
+/* HEADER */
 
 /* Navbar */
 .navbar{
@@ -143,6 +93,8 @@ nav div{
   color: var(--color-comprar-tickets);
   font-weight: 600;
 }
+
+/* MAIN */
 
 /* Portada */
 #banner {
@@ -200,8 +152,6 @@ nav div{
   color: var(--color-form-button);
 }
 
-/***** Main *****/
-
 /* Sección Los oradores */
 .speakers__title{
   text-transform: uppercase;
@@ -233,9 +183,7 @@ nav div{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* text-align: center; */
 }
-
 
 /* Sección Conviertete en orador, formulario */
 .becomeSpeaker{
@@ -277,7 +225,7 @@ nav div{
   max-width: 48vw;
 }
 
-/***** Footer *****/
+/* FOOTER */
 .footer {
   margin-top: 1rem;
   background-color: rgb(29, 64, 84);
@@ -298,7 +246,7 @@ nav div{
 }
 
 .footer__list__item__link {
-  color: aliceblue;
+  color: white;
   text-decoration: none;
   margin: 0.5rem 1rem;
 }
@@ -353,13 +301,7 @@ nav div{
   }
 
   .place__content{
-    background-color: var(--color-navbar);
-    color: white;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .becomeSpeaker__form{
@@ -385,6 +327,33 @@ nav div{
 
   #logo{
     max-width: 6.5rem;
+  }
+
+  .desplazamiento{
+    transition-duration: 2000ms;
+  }
+
+  @keyframes desplazamiento{
+    0%{
+      margin-left: 0vw;
+      transform: rotate(360deg);
+    }
+    25%{
+      margin-left: 0vw;
+      transform: rotate(270deg);
+    }
+    50%{
+      margin-left: 0vw;
+      transform: rotate(180deg);
+    }
+    75%{
+      margin-left: 0vw;
+      transform: rotate(90deg);
+    }
+    100%{
+      margin-left: 0vw;
+      transform: rotate(0deg);
+    }
   }
 
   #banner {
