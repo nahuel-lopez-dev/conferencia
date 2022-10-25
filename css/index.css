@@ -369,23 +369,18 @@ nav div{
   .banner__content{
     width: 90%;
     margin-right: 0;
-    padding: 1.2rem;
+    padding: 0.8rem 0.8rem 1.5rem 0.8rem;
   }
 
   .buyTickets__content{
     flex-direction: column;
     margin-bottom: 1rem;
   }
-
-  /* .banner__content_buttons{
-    display: flex;
-    flex-direction: column;
-  } */
 }
 /* media query específica para detalles en algunos celulares  */
-@media(max-width: 440px){
+@media(max-width: 424px){
   .banner__content{
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
   }
 
   .banner__content_buttons{
@@ -394,7 +389,14 @@ nav div{
   }
 }
 
+/* media query específica para el Galaxy Fold */
+#logo{
+  max-width: 5.3rem;
+}
 
+nav div span {
+  font-size: 1.15rem;
+}
 
 
 
