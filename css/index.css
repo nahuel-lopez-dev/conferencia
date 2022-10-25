@@ -186,6 +186,11 @@ nav div{
 }
 
 /* Sección Conviertete en orador, formulario */
+.text-decoration-charla{
+  text-decoration: dotted underline;
+  /* text-underline-position: under; */
+}
+
 .becomeSpeaker{
   display: flex;
   flex-direction: column;
@@ -286,7 +291,8 @@ nav div{
   .banner__content {
     align-items: flex-start;
     width: 70%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 3rem;
     text-align: start;
   }
 
@@ -363,11 +369,23 @@ nav div{
   .banner__content{
     width: 90%;
     margin-right: 0;
+    padding: 1.2rem;
   }
 
   .buyTickets__content{
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  /* .banner__content_buttons{
+    display: flex;
+    flex-direction: column;
+  } */
+}
+/* media query específica para detalles en algunos celulares  */
+@media(max-width: 440px){
+  .banner__content{
+    padding: 0.5rem;
   }
 
   .banner__content_buttons{
