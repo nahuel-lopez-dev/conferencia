@@ -29,7 +29,7 @@ Este es el proyecto Front-end para el curso Full Stack con Node.js, de Codo a Co
 
 Si quieres saber más sobre mí, puedes ir a mi perfil de GitHub:
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub:-Nahuel_Lopez_Dev♾️-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/nahuel-lopez-dev)
+[![GitHub Profile](https://img.shields.io/badge/GitHub:-Nahuel_Lopez_Dev_ထ-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/nahuel-lopez-dev)
   
 💬 Siéntete libre de ponerte en contacto conmigo:
 
